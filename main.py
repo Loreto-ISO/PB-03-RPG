@@ -12,7 +12,7 @@ def main():
     #crear personajes
 
     magician = Mago("saruman", 10, 100, 150)
-    warrior = Guerrero("Hector el grande", 10, 100, 250)
+    warrior = Guerrero("Hector el grande", 10, 100, 250) #seleccionar atacar y usar habilidad
 
     #asociar jugador con el pj
 
@@ -25,6 +25,19 @@ def main():
 
     #habilidad del mago
     magician.usar_habilidad()
+
+    #crear objetos
+
+    pocion = Objeto("Poción de vida", "Consumible")
+    espada = Objeto("Excalibur", "Arma")
+
+    #agregar objetos al inv del pj
+
+    magician.inventario.agregar_objeto(pocion)
+    magician.inventario.agregar_objeto(espada)
+
+    #mostrar inventario
+    magician.inventario.mostrar_informacion()
 
 if __name__=="__main__":
     main()
