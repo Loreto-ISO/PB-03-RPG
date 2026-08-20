@@ -12,7 +12,7 @@ class Inventario:
 
         print("\n--- INVENTARIO ---")
 
-        if len(self.objeto) == 0:
+        if len(self.objetos) == 0:
             print("El inventario está vacío")
         else:
             for objeto in self.objetos:

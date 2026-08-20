@@ -12,7 +12,7 @@ def main():
     #crear personajes
 
     magician = Mago("saruman", 10, 100, 150)
-    warrior = Guerrero("Hector el grande", 10, 100, 250) #seleccionar atacar y usar habilidad
+    #warrior = Guerrero("Hector el grande", 10, 100, 250) #seleccionar atacar y usar habilidad
 
     #asociar jugador con el pj
 
